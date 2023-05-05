@@ -2,6 +2,8 @@
  
 **Authors:** Nicholas Sharp, Cristian Romero, Alec Jacobson, Etienne Vouga, Paul Kry, David I.W. Levin, Justin Solomon
 
+![a rendering of a ball rolling on a cloth, demonstrating a reduced subspace](https://github.com/nmwsharp/neural-physics-subspaces/blob/main/media/big_teaser.png)
+
 [[project page]](https://nmwsharp.com/research/neural-physics-subspaces/)  [[PDF]](https://nmwsharp.com/media/papers/neural-physics-subspaces/neural_physics_subspaces.pdf)  [[video]](https://youtu.be/6X2inurzkrs)
 
 Use neural networks to fit low-dimensional subspaces for simulations, with no dataset needed—the method automatically explores the potential energy landscape.
