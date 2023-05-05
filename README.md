@@ -1,6 +1,6 @@
 ## Data-Free Learning of Reduced-Order Kinematics (SIGGRAPH 2023)
  
-**Authors:** Nicholas Sharp, Cristian Romero, Alec Jacobson, Etienne Vouga, Paul Kry, David I.W. Levin, Justin Solomon
+**Authors:** Nicholas Sharp, Cristian Romero, Alec Jacobson, Etienne Vouga, Paul G. Kry, David I.W. Levin, Justin Solomon
 
 ![a rendering of a ball rolling on a cloth, demonstrating a reduced subspace](https://github.com/nmwsharp/neural-physics-subspaces/blob/main/media/big_teaser.png)
 
