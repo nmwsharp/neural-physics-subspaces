@@ -1,6 +1,10 @@
-## Data-Free Learning of Reduced-Order Kinematics
+## Data-Free Learning of Reduced-Order Kinematics (SIGGRAPH 2023)
+ 
+**Authors:** Nicholas Sharp, Cristian Romero, Alec Jacobson, Etienne Vouga, Paul Kry, David I.W. Levin, Justin Solomon
 
-Fit low-dimensional subspaces to physical systems with neural networks (SIGGRAPH 2023)
+[[project page]](https://nmwsharp.com/research/neural-physics-subspaces/)  [[PDF]](https://nmwsharp.com/media/papers/neural-physics-subspaces/neural_physics_subspaces.pdf)  [[video]](https://youtu.be/6X2inurzkrs)
+
+Use neural networks to fit low-dimensional subspaces for simulations, with no dataset needed—the method automatically explores the potential energy landscape.
 
 This repo contains an implementation of our core procedure on some sample physical systems.
 
@@ -15,11 +19,6 @@ Other dependencies are all available through pip and conda. Conda `environment.y
 This code runs on CPUs or GPUs, although generally the GPU will be dramatically faster.
 
 ## Running
-
-> Three quick notes about apparent performance:
->   - JAX code is JIT-compiled, so all routines will have a lag when they are called for the first time.
->   - JAX by default allocates nearly all available GPU memory at startup.
->   - This vesion of our GUI is implemented in a way which may be slow on some machines. Be wary that rendering the scene data may actually be dominating the runtime, for incidental software reasons unrelated to our algorithm. Alternate GUIs can be used to circumvent the issue if needed.
 
 ### Basic
 
@@ -48,6 +47,11 @@ Once the subspace has been fitted, it can be loaded in to the run script as
 python src/main_run_system.py --system_name [system_name] --problem_name [problem_name] --subspace [subspace_file_prefix]
 ```
 to explore the subspace. Note that [subspace_file_prefix] should not be a full filename, but the prefix which is printed by the training script.
+
+Three quick notes about apparent performance:
+   - JAX code is JIT-compiled, so all routines will have a lag when they are called for the first time.
+   - JAX by default allocates nearly all available GPU memory at startup.
+   - This vesion of our GUI is implemented in a way which may be slow on some machines. Be wary that rendering the scene data may actually be dominating the runtime, for incidental software reasons unrelated to our algorithm. Alternate GUIs can be used to circumvent the issue if needed.
 
 
 ## Physical systems
